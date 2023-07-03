@@ -1,0 +1,22 @@
+.notification {
+  position: relative;
+}
+.notification::after {
+  content: "12+";
+  width: 2rem;
+  font-size: 0.8rem;
+  border-radius: 10px;
+  background-color: red;
+  position: absolute;
+  inset: -8px auto auto auto;
+}
+.main {
+  background-color: #212529;
+}
+.container {
+  width: 95%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}

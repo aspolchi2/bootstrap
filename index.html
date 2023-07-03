@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bahia Cinema</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary ">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Bahia Cinema</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">La ciudad</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Festival</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Agenda
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Museos</a></li>
+                  <li><a class="dropdown-item" href="#">Visitas guiadas</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Torneos de Sudoku</a>
+                  </li>
+                  <li><a class="dropdown-item" href="#">Tarot</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Avistamiento de Aves</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <button type="button" class="btn btn-primary notification">
+              Novedades
+            </button>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="main">
+      <div class="container">
+        <div id="carouselExampleDark" class="carousel slide">
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleDark"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleDark"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleDark"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleDark"
+              data-bs-slide-to="3"
+              aria-label="Slide 4"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+              <img src=./images/bahia1.png class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Teatro Municipal</h5>
+                <p>Ubicado en Alsina y Alem</p>
+              </div>
+            </div>
+            <div class="carousel-item active" data-bs-interval="10000">
+              <img src=./images/bahia2.png class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Plaza Rivadavia</h5>
+                <p>Ubicado en pleno centro</p>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img src=./images/bahia3.png class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Club Argentino</h5>
+                <p>Ubicado en Av. Colon</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src=./images/bahia4.png class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Estacion de trenes</h5>
+                <p>Ubicado en Av. Cerri</p>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <div class="alert alert-info" role="alert">Hay nuevas peliculas!</div>
+        <div class="cards d-flex justify-content-between">
+            <div class="card" style="width: 16rem;">
+              <img src="..." class="card-img-top" id= "imgpeli1" alt="...">
+              <div class="card-body">
+                <h5 class="card-title" id="namePeli1"></h5>
+                <p class="card-subtitle" id="genrePeli1"></p>
+
+                <!-- <p class="card-text"></p> -->
+                <a href="#" class="btn btn-primary">Ver premios</a>
+              </div>
+            </div>
+      
+            <div class="card mb-3" style="width: 16rem;">
+              <img src="..." class="card-img-top" id= "imgpeli2" alt="...">
+              <div class="card-body">
+                <h5 class="card-title"  id="namePeli2"></h5>
+                <p class="card-subtitle" id="genrePeli2"></p>
+
+                <!-- <p class="card-text"></p> -->
+                <a href="#" class="btn btn-primary">Ver premios</a>
+              </div>
+            </div>
+      
+            <div class="card mb-3" style="width: 16rem;">
+              <img src="..." class="card-img-top" id= "imgpeli3" alt="...">
+              <div class="card-body">
+                <h5 class="card-title" id="namePeli3"></h5>
+                <p class="card-subtitle" id="genrePeli3"></p>
+
+                <!-- <p class="card-text"></p> -->
+                <a href="#" class="btn btn-primary">Ver premios</a>
+              </div>
+            </div>
+      
+            <div class="card mb-3" style="width: 16rem;">
+              <img src="..." class="card-img-top" id= "imgpeli4" alt="...">
+              <div class="card-body">
+                <h5 class="card-title" id="namePeli4"></h5>
+                <p class="card-subtitle" id="genrePeli4"></p>
+                <!-- <p class="card-text"></p> -->
+                <a href="#" class="btn btn-primary">Ver premios</a>
+              </div>
+            </div>
+      
+      </div>
+    </main>
+  </body>
+</html>
